@@ -155,8 +155,8 @@ h2 {
           click on the button that says click here. Click on the 3rd button to check the forms out.
         </p>
         <a href="https://discord.gg/7kfUPRsAZH" class="discord-btn">JOIN NOW</a>
-        <a href="http://https://apcwebprog.csf.ph/~jsdurano/lab3/ci4/public/author" class="author-btn">CLICK HERE</a>
-        <a href="http://https://apcwebprog.csf.ph/~jsdurano/lab3/ci4/public/forms" class="forms-btn">FORMS</a>
+        <a href="https://apcwebprog.csf.ph/~jsdurano/lab3/ci4/public/author" class="author-btn">CLICK HERE</a>
+        <a href="https://apcwebprog.csf.ph/~jsdurano/lab3/ci4/public/forms" class="forms-btn">FORMS</a>
       </article>
     
       <div class="badudong_img">
