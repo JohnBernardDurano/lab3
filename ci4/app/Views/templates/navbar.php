@@ -47,7 +47,7 @@
 </style>
 <header>
     <div class="navigation">
-      <a href="http://localhost/lab3/ci4/public/home">Home</a>|
-      <a href="http://localhost/lab3/ci4/public/author">The Badudong</a>|
-      <a href="http://localhost/lab3/ci4/public/references">Resources</a>
+      <a href="http://http://apcwebprog.csf.ph/~jsdurano/lab3/ci4/public/home">Home</a>|
+      <a href="http://http://apcwebprog.csf.ph/~jsdurano/lab3/ci4/public/author">The Badudong</a>|
+      <a href="http://http://apcwebprog.csf.ph/~jsdurano/lab3/ci4/public/references">Resources</a>
   </header>
