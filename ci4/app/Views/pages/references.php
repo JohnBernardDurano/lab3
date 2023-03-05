@@ -54,8 +54,4 @@
       </div>
     </div>
   </section>
-
-  <footer>
-    <p class = "pink">&quot;You are now under the Badudong that is always watching.&quot;</p>
-  </footer>
 </body>
