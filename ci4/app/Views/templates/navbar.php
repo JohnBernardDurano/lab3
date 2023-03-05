@@ -49,5 +49,5 @@
     <div class="navigation">
       <a href="https://apcwebprog.csf.ph/~jsdurano/lab3/ci4/public/home">Home</a>|
       <a href="https://apcwebprog.csf.ph/~jsdurano/lab3/ci4/public/author">The Badudong</a>|
-      <a href="https://http://apcwebprog.csf.ph/~jsdurano/lab3/ci4/public/references">Resources</a>
+      <a href="https://apcwebprog.csf.ph/~jsdurano/lab3/ci4/public/references">Resources</a>
   </header>
