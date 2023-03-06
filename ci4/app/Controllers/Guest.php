@@ -37,27 +37,27 @@ class Guest extends BaseController {
             'gstname' => 'required|max_length[255]|min_length[3]',
             'email' => 'required|max_length[255]|min_length[3]',
             'website' => 'required|max_length[255]|min_length[3]',			
-            'vtuber'  => 'required|max_length[5000]|min_length[10]',
-            'messages' => 'required|max_length[255]|min_length[3]',			
+            'vtuber'  => 'required|max_length[255]|min_length[3]',
+            'messages' => 'required|max_length[5000]|min_length[10]',			
         ])) {
             // The validation fails, so returns the form.
-            return view('templates/header', ['title' => 'Join The Masterclass'])
-                . view('pages/validation')
+            return view('templates/header', ['title' => 'Input your details'])
+                . view('pages/forms')
                 . view('templates/footer');
         }
 
         $model = model(GuestModel::class);
 
         $model->save([
-            'NAME' => $post['NAME'],
-            'EMAIL'  => $post['EMAIL'],
-            'WEBSITE'  => $post['WEBSITE'],
-            'COMMENT'  => $post['COMMENT'],
-            'GENDER'  => $post['GENDER'],
+            'gstname' => $post['gstname'],
+            'email'  => $post['email'],
+            'website'  => $post['website'],
+            'vtuber'  => $post['vtuber'],
+            'messages'  => $post['messages'],
         ]);
 
-        return view('templates/header', ['title' => 'Join The Masterclass'])
-            . view('pages/masterclass')
+        return view('templates/header', ['title' => 'Input your details'])
+            . view('pages/guests')
             . view('templates/footer');
     }
 }

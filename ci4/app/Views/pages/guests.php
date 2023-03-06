@@ -1,3 +1,3 @@
 <?php 
-echo 'Hello World!'
+echo 'Thank you for voting for my website!'
 ?>
