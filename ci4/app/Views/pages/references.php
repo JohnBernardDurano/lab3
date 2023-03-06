@@ -42,11 +42,16 @@
         </div>
         <h2>W3Schools</h2>
         <p>The references used were from W3Schools link down below.</p>
-        <a href="https://www.w3schools.com/default.asp" class="discord-btn">W3Schools</a>
+        <a href="https://www.w3schools.com/default.asp">W3Schools</a>
         <h2>FFH</h2>
         <p>The images used in this webpage are all originals taken from the server. Link is right down below.
         </p>
-        <a href="https://discord.gg/7kfUPRsAZH" class="discord-btn">JOIN NOW</a>
+        <a href="https://discord.gg/7kfUPRsAZH">JOIN NOW</a>
+        <h2>Code Igniter</h2>
+        <p>Some of the stuff seen here are from codeigniter</p>
+        <a href="https://codeigniter4.github.io/userguide/tutorial/news_section.html">CI4</a>
+        <h2>Special Thanks to my classmates</h2>
+        <p>Jeff, Jonlord, CEO, and Jasper</p>
       </article>
     
       <div class="badudong_img">
