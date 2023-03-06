@@ -7,7 +7,7 @@ use App\Models\GuestModel;
 class Guest extends BaseController {
     public function index()
     {
-        $model = model(NewsModel::class);
+        $model = model(GuestModel::class);
 
         $data = [
             'guest'  => $model->getGuest(),
