@@ -57,7 +57,7 @@ class Guest extends BaseController {
         ]);
 
         return view('templates/header', ['title' => 'Input your details'])
-            . view('pages/guests')
+            . view('pages/landing')
             . view('templates/footer');
     }
 }
