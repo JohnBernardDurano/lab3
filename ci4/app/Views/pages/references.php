@@ -50,7 +50,7 @@
         <h2>Code Igniter</h2>
         <p>Some of the stuff seen here are from codeigniter</p>
         <a href="https://codeigniter4.github.io/userguide/tutorial/news_section.html">CI4</a>
-        <h2>Special Thanks to my classmates</h2>
+        <h2>Special Thanks to</h2>
         <p>Jeff, Jonlord, CEO, and Jasper</p>
       </article>
     
