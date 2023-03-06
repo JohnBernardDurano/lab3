@@ -89,6 +89,9 @@ function test_input($data) {
 <h2>Input your details.</h2>;
 
 <form method="post";action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" style="color: aliceblue; text-align:right">  
+
+  <?= csrf_field() ?>
+
   Name: <input type="text" name="name">
   <br><br>
   E-mail: <input type="text" name="email">
