@@ -11,7 +11,7 @@ class Guest extends BaseController {
 
         $data = [
             'guest'  => $model->getGuest(),
-            'title' => 'Guestbook',
+            'title' => 'Guests',
         ];
 
         return view('templates/header', $data)
@@ -25,7 +25,7 @@ class Guest extends BaseController {
         // Checks whether the form is submitted.
         if (! $this->request->is('post')) {
             // The form is not submitted, so returns the form.
-            return view('templates/header', ['title' => 'Join The Masterclass'])
+            return view('templates/header', ['title' => 'Input your details'])
                 . view('pages/forms')
                 . view('templates/footer');
         }
