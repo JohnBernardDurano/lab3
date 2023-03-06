@@ -26,7 +26,7 @@ class Guest extends BaseController {
         if (! $this->request->is('post')) {
             // The form is not submitted, so returns the form.
             return view('templates/header', ['title' => 'Join The Masterclass'])
-                . view('pages/validation')
+                . view('pages/forms')
                 . view('templates/footer');
         }
 
