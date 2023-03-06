@@ -15,7 +15,7 @@ class Guest extends BaseController {
         ];
 
         return view('templates/header', $data)
-            . view('guest/index')
+            . view('pages/guests')
             . view('templates/footer');
     }
 }

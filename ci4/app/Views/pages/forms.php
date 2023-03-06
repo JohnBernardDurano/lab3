@@ -105,46 +105,5 @@ function test_input($data) {
   <br><br>
   <input type="submit" name="submit" value="Submit">
 </form>
-
-<?php
-echo "<h2>Your Input:</h2>";
-echo "<div style=\"color:aliceblue;\">" . $name . "</div>";
-echo "<br>";
-echo "<div style=\"color:aliceblue;\">" . $email . "</div>";
-echo "<br>";
-echo "<div style=\"color:aliceblue;\">" . $website . "</div>";
-echo "<br>";
-echo "<div style=\"color:aliceblue;\">" . $vtuber . "</div>";
-echo "<br>";
-echo "<div style=\"color:aliceblue;\">" . $gender . "</div>";
-echo "<br>";
-
-if ($_SERVER["REQUEST_METHOD"] == "POST") 
-{
-
-	$servername = "192.168.150.213";
-	$username = "webprogmi212";
-	$password = "b3ntRhino98";
-	$dbname = "webprogmi212";
-	
-	// Create connection
-	$conn = new mysqli($servername, $username, $password, $dbname);
-	// Check connection
-	if ($conn->connect_error) {
-	die("Connection failed: " . $conn->connect_error);
-	}
-	
-	$sql = "INSERT INTO jsdurano_guests (gstname, email, website, vtuber, messages)
-	VALUES ('$name', '$email', '$website', '$vtuber', '$messages')";
-	
-	if ($conn->query($sql) === TRUE) {
-	echo "Thank you for voting for my website.";
-	} else {
-	echo "Error: " . $sql . "<br>" . $conn->error;
-	}
-	
-	$conn->close();
-}
-?>
 </section>
 </body>
