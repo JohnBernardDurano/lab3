@@ -69,13 +69,44 @@ header .navigation a:hover{
 <?php
 
 $name = $email = $gender = $messages = $website = $vtuber = "";
+$nameErr = $emailErr = $genderErr = $messagesErr = $websiteErr = $vtuberErr = "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-  $name = test_input($_POST["name"]);
-  $email = test_input($_POST["email"]);
-  $website = test_input($_POST["website"]);
-  $vtuber = test_input($_POST["vtuber"]);
-  $gender = test_input($_POST["gender"]);
+  if (empty($_POST["gstname"])){
+    $nameErr = "Name is required";
+  } else {
+    $name = test_input($_POST["gstname"]);
+    if (!preg_match("/^[a-zA-Z-' ]*$/",$name)){
+      $name = "Only letters and white space allowed";
+    }
+  }
+  if (empty($_POST["email"])){
+    $emailErr = "Email is required";
+  } else {
+    if(!filter_var("email")){
+      $emailErr = "Invalid email format";
+    }
+  }
+  if (empty($_POST["website"])) {
+    $website = "";
+  } else {
+    $website = test_inpput($_POST["website"]);
+    if (!preg_match("/\b(?:(?:https?|ftp):\/\/|www\.)[-a-z0-9+&@#\/%?=~_|!:,.;]*[-a-z0-9+&@#\/%=~_|]/i",$website)) {
+      $websiteErr = "Invalid URL";
+    }
+  }
+  if (empty($_POST["vtuber"])){
+    $nameErr = "The name of a vtuber is required";
+  } else {
+    $name = test_input($_POST["vtuber"]);
+    if (!preg_match("/^[a-zA-Z-' ]*$/",$name)){
+      $name = "Only letters and white space allowed";
+    }
+  if (empty($_POST["comment"])) {
+    $comment = "";
+  } else {
+    $comment = test_input($_POST["comment"]);
+  }
 }
 
 function test_input($data) {
